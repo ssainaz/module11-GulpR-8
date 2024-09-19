@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+}
+
+/* Header Styles */
+header.bg-primary {
+    max-height: 120px;
+    overflow: hidden;
+    background-color: #4A90E2; /* Medium blue background */
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+/* Logo Styles */
+.navbar-brand {
+    display: block;
+    width: 150px;
+    height: 90px;
+    background-image: url('../media/gulp-logo-light.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/* Custom color for active nav link */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffc107;
+}
+
+/* Main Content Styles */
+main {
+    min-height: 80vh;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #6F4E37;
+    border-color: #6F4E37;
+}
+
+.btn-primary:hover {
+    background-color: #5A3E2B;
+    border-color: #5A3E2B;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6F4E37 !important;
+}
+
+/* Accordion Styles */
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+    color: #6F4E37;
+}
+
+/* Product Page Styles */
+.product-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar Styles */
+.progress {
+    height: 25px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    line-height: 25px;
+    font-weight: bold;
+}
+
+/* Custom color classes */
+.bg-coffee {
+    background-color: #6F4E37;
+}
+
+.text-coffee {
+    color: #6F4E37;
+}
+
+.border-coffee {
+    border-color: #6F4E37 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+    }
+    
+    .card-img-top {
+        height: 250px;
+    }
+
+    header.bg-primary {
+        max-height: 80px;
+    }
+
+    .navbar-brand {
+        width: 100px;
+        height: 40px;
+    }
+}
